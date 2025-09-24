@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Меню кофейни</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: linear-gradient(135deg, #f2e9e4, #dbc7b5);
+      margin: 0;
+      padding: 0;
+      color: #3e2f24;
+    }
+    header {
+      text-align: center;
+      padding: 20px;
+      background-color: #6b4226;
+      color: white;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+    header h1 {
+      margin: 10px 0 0;
+      font-size: 42px;
+    }
+    header p {
+      margin: 5px 0;
+      font-size: 18px;
+      font-style: italic;
+    }
+    .menu-container {
+      max-width: 1100px;
+      margin: 40px auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 25px;
+      padding: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 18px rgba(0,0,0,0.3);
+    }
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 15px;
+    }
+    .card-content h3 {
+      margin: 0;
+      font-size: 20px;
+      color: #4a2c1a;
+    }
+    .card-content p {
+      margin: 8px 0 0;
+      font-size: 16px;
+      color: #6b4226;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div style="font-size:55px;">кола пепси султан секси ☕</div>
+    <h1>Меню кофейни</h1>
+    <p>Лучший инструктор по сексу СУЛЯ</p>
+  </header>
+
+  <div class="menu-container">
+
+    <div class="card">
+      <img src="https://www.marketresearchintellect.com/images/blogs/sipping-success-exploring-the-dynamics-of-the-espresso-coffee-market.webp" alt="Эспрессо">
+      <div class="card-content">
+        <h3>Эспрессо</h3>
+        <p>650 ₸</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://www.coffeeproject.ru/blog/wp-content/uploads/2020/07/21689897_151057922158512_9036092307195035648_n-1024x681.jpg" alt="Американо">
+      <div class="card-content">
+        <h3>Американо</h3>
+        <p>750 ₸</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://st2.depositphotos.com/1177973/6956/i/950/depositphotos_69569191-stock-photo-cup-of-latte-art-coffee.jpg" alt="Латте">
+      <div class="card-content">
+        <h3>Латте</h3>
+        <p>900 / 1100 / 1300 ₸</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://static.insales-cdn.com/files/1/4789/5149365/original/%D0%BA%D0%B0%D0%BF%D1%83%D1%87%D0%B8%D0%BD%D0%BE-01.jpg" alt="Капучино">
+      <div class="card-content">
+        <h3>Капучино</h3>
+        <p>900 / 1100 / 1300 ₸</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://kniga-kofe.ru//wp-content/uploads/2017/09/pexels-photo-414720-e1505517412526.jpeg" alt="Флэт Уайт">
+      <div class="card-content">
+        <h3>Флэт Уайт</h3>
+        <p>900 ₸</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src=" https://raivbel.by/upload/iblock/995/99596fc17c4a5cc2373d2d2ea74d77ed.jpg " alt="Айс-Латте">
+      <div class="card-content">
+        <h3>Айс-Латте</h3>
+        <p>1300 ₸</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://shuba.life/static/content/thumbs/1824x912/b/a8/lxykr6---c2x1x50px50p-up--7f0ab2d4c83081bd8ec840d71e031a8b.jpg"alt="Чай">
+      <div class="card-content">
+        <h3>Чай (Black / Green / Fruit)</h3>
+        <p>300 / 300 / 500 ₸</p>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
