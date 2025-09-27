@@ -41,6 +41,9 @@
       overflow: hidden;
       box-shadow: 0 6px 12px rgba(0,0,0,0.2);
       transition: transform 0.2s ease, box-shadow 0.2s ease;
+      cursor: pointer;
+      text-decoration: none;
+      color: inherit;
     }
     .card:hover {
       transform: translateY(-8px);
@@ -65,17 +68,64 @@
       color: #6b4226;
       font-weight: bold;
     }
+    /* Секция завтраков */
+    #breakfast-menu {
+      display: none;
+      grid-column: 1 / -1;
+      margin-top: -10px;
+    }
   </style>
 </head>
 <body>
   <header>
-    <div style="font-size:55px;">кола пепси султан секси ☕</div>
+    <div style="font-size:55px;">the coffee ☕</div>
     <h1>Меню кофейни</h1>
-    <p>Лучший инструктор по сексу СУЛЯ</p>
+    <p>Лучшее кофе в городе</p>
   </header>
 
   <div class="menu-container">
 
+    <!-- Карточка Завтраки -->
+    <div class="card" onclick="toggleBreakfast()">
+      <img src="https://static.tildacdn.com/tild3665-6139-4037-b364-653263613136/breakfast.jpg" alt="Завтраки">
+      <div class="card-content">
+        <h3>Завтраки</h3>
+        <p>Нажмите, чтобы открыть</p>
+      </div>
+    </div>
+
+    <!-- Скрытый блок с завтраками -->
+    <div id="breakfast-menu">
+      <div class="menu-container">
+
+        <div class="card">
+          <img src="https://eda.ru/img/eda/1200x-i/s2.eda.ru/StaticContent/Photos/130213122657/150214184511/p_O.jpg" alt="Яичница">
+          <div class="card-content">
+            <h3>Яичница</h3>
+            <p>1000 ₸</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="https://static.1000.menu/img/content-v2/d2/2d/40169/toast-s-yaicom-i-syrom_1610012030_13_max.jpg" alt="Тосты">
+          <div class="card-content">
+            <h3>Тосты с сыром</h3>
+            <p>1200 ₸</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="https://avatars.dzeninfra.ru/get-zen_doc/4482035/pub_607a0c7b24552a09f1b0c9d5_607a0e05aab6280c6bafeb5a/scale_1200" alt="Овсянка">
+          <div class="card-content">
+            <h3>Овсянка с фруктами</h3>
+            <p>1300 ₸</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Напитки -->
     <div class="card">
       <img src="https://www.marketresearchintellect.com/images/blogs/sipping-success-exploring-the-dynamics-of-the-espresso-coffee-market.webp" alt="Эспрессо">
       <div class="card-content">
@@ -117,7 +167,7 @@
     </div>
 
     <div class="card">
-      <img src=" https://raivbel.by/upload/iblock/995/99596fc17c4a5cc2373d2d2ea74d77ed.jpg " alt="Айс-Латте">
+      <img src="https://raivbel.by/upload/iblock/995/99596fc17c4a5cc2373d2d2ea74d77ed.jpg" alt="Айс-Латте">
       <div class="card-content">
         <h3>Айс-Латте</h3>
         <p>1300 ₸</p>
@@ -125,7 +175,7 @@
     </div>
 
     <div class="card">
-      <img src="https://shuba.life/static/content/thumbs/1824x912/b/a8/lxykr6---c2x1x50px50p-up--7f0ab2d4c83081bd8ec840d71e031a8b.jpg"alt="Чай">
+      <img src="https://shuba.life/static/content/thumbs/1824x912/b/a8/lxykr6---c2x1x50px50p-up--7f0ab2d4c83081bd8ec840d71e031a8b.jpg" alt="Чай">
       <div class="card-content">
         <h3>Чай (Black / Green / Fruit)</h3>
         <p>300 / 300 / 500 ₸</p>
@@ -133,6 +183,14 @@
     </div>
 
   </div>
+
+  <script>
+    function toggleBreakfast() {
+      const block = document.getElementById("breakfast-menu");
+      block.style.display = block.style.display === "none" ? "block" : "none";
+    }
+  </script>
 </body>
 </html>
+
 
