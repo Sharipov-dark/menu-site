@@ -68,8 +68,8 @@
       color: #6b4226;
       font-weight: bold;
     }
-    /* Секция завтраков */
-    #breakfast-menu {
+    /* Скрытые секции */
+    #breakfast-menu, #raf-menu {
       display: none;
       grid-column: 1 / -1;
       margin-top: -10px;
@@ -119,6 +119,54 @@
           <div class="card-content">
             <h3>Овсянка с фруктами</h3>
             <p>1300 ₸</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="https://static.1000.menu/img/content/ce/3a/37636/blinchiki-na-moloke-s-mukoi-pshenichnoi_1636112646_22_max.jpg" alt="Блины">
+          <div class="card-content">
+            <h3>Блины</h3>
+            <p>1100 ₸</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Карточка Рафы -->
+    <div class="card" onclick="toggleRaf()">
+      <img src="https://avatars.mds.yandex.net/i?id=48ab6cf7f2bdf39fcabcebb774b97fcd_l-8493516-images-thumbs&n=13" alt="Раф">
+      <div class="card-content">
+        <h3>Раф</h3>
+        <p>Нажмите, чтобы открыть</p>
+      </div>
+    </div>
+
+    <!-- Скрытый блок с рафами -->
+    <div id="raf-menu">
+      <div class="menu-container">
+
+        <div class="card">
+          <img src="https://avatars.mds.yandex.net/i?id=48ab6cf7f2bdf39fcabcebb774b97fcd_l-8493516-images-thumbs&n=13" alt="Классический Раф">
+          <div class="card-content">
+            <h3>Классический Раф</h3>
+            <p>1200 ₸</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="https://www.povarenok.ru/data/cache/2019nov/18/16/2602208_36864-710x550x.jpg" alt="Раф с халвой">
+          <div class="card-content">
+            <h3>Раф с халвой</h3>
+            <p>1400 ₸</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="https://img.povar.ru/main/7e/42/58/7b/raf_kofe_s_sirupom-570991.jpg" alt="Раф с сыром">
+          <div class="card-content">
+            <h3>Раф с сыром</h3>
+            <p>1500 ₸</p>
           </div>
         </div>
 
@@ -187,6 +235,10 @@
   <script>
     function toggleBreakfast() {
       const block = document.getElementById("breakfast-menu");
+      block.style.display = block.style.display === "none" ? "block" : "none";
+    }
+    function toggleRaf() {
+      const block = document.getElementById("raf-menu");
       block.style.display = block.style.display === "none" ? "block" : "none";
     }
   </script>
